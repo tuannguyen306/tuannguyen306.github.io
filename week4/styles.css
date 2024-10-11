@@ -1,0 +1,15 @@
+.todolist {
+  width: 500px;
+  margin: 0 auto;
+  padding: 8px 24px;
+  font-size: 30px;
+  box-shadow: 0 0 10px 2px #333333;
+  border: 3px solid #f45;
+  background: rgb(119, 223, 234);
+}
+.todolist ol {
+    margin: 12px;
+}
+.todolist p {
+    text-align: center;
+}
