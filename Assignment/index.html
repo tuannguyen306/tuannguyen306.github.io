@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // JavaScript functions for button actions
+        function showAlert() {
+            alert("You clicked the Alert Button!");
+        }
+
+        function submitForm() {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            if (name && email) {
+                alert("Form submitted successfully!\nName: " + name + "\nEmail: " + email);
+            } else {
+                alert("Please fill in all required fields.");
+            }
+        }
+
+        function resetForm() {
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("phone").value = "";
+            document.getElementById("age").value = "";
+            document.getElementById("password").value = "";
+            document.getElementById("gender").value = "0"; // Reset gender selection
+            alert("Form has been reset.");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>My Library</h1>
+    </header>
+    <nav>   
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#catalog">Catalog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="hero">
+            <h1>Your Gateway to Knowledge</h1>
+            <p>Explore thousands of books, journals, and digital resources at your fingertips.</p>
+        </section>
+
+        <section class="checkbox-section">
+            <h2>Register to access the library</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+            <br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="Enter your age" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password">
+            <!--dropdown-->
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+                <option value="0">Male</option>
+                <option value="1">Female</option>
+                <option value="2">No prefer</option>
+            </select>
+            <br>
+            <!-- Buttons -->
+            <button type="button" onclick="submitForm()">Submit</button>
+            <button type="button" onclick="resetForm()">Reset</button>
+            <br>
+        </section>
+
+        <section class="book-section" id="catalog">
+            <div class="book">
+                <img src="img1.png" alt="Book Cover">
+                <h3>The Catcher in the Rye</h3>
+                <p>Author: J.D. Salinger</p>
+            </div>
+            <div class="book">
+                <img src="img2.jpg" alt="Book Cover">
+                <h3>Anne of Green Gables</h3>
+                <p>Author: L.M. Montgomery</p>
+            </div>
+            <div class="book">
+                <img src="img3.jpg" alt="Book Cover">
+                <h3>The Hitchhiker's Guide to the Galaxy</h3>
+                <p>Author: Douglas Adams</p>
+            </div>
+            <div class="book">
+                <img src="img4.jpg" alt="Book Cover">
+                <h3>Top of the World</h3>
+                <p>Author: Hans Ruesch</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Library Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>

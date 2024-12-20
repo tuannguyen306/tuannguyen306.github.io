@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+header {
+    background-color: #2d3dec;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+nav {
+    background-color: #84b9c0;
+    padding: 0.5rem 2rem;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #FFD700;
+}
+main {
+    padding: 2rem;
+}
+.hero {
+    text-align: center;
+    margin-bottom: 2rem;
+    background-color: rgb(18, 224, 196);
+    color: #fff;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.search-bar {
+    text-align: center;
+    margin-top: 1rem;
+}
+.search-bar input[type="text"] {
+    padding: 0.5rem;
+    width: 60%;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.search-bar button {
+    padding: 0.5rem 1rem;
+    background-color: #00539C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.search-bar button:hover {
+    background-color: #FFD700;
+}
+.book-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+.book {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+.book:hover {
+    transform: scale(1.05);
+}
+.book img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.book h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+.book p {
+    color: #555;
+    font-size: 0.9rem;
+}
+.book .actions {
+    margin-top: 1rem;
+}
+.book .actions button {
+    background-color: #00539C;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+.book .actions button:hover {
+    background-color: #FFD700;
+}
+.checkbox-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.checkbox-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.checkbox-section label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+.checkbox-section input,
+.checkbox-section select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.checkbox-section button {
+    background-color: #00539C;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+.checkbox-section button:hover {
+    background-color: #FFD700;
+}
+footer {
+    background-color: #003E73;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+footer .social-icons {
+    margin-top: 1rem;
+}
+footer .social-icons a {
+    color: #fff;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+footer .social-icons a:hover {
+    color: #FFD700;
+}
